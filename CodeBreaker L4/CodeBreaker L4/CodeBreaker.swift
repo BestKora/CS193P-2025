@@ -24,7 +24,7 @@ struct CodeBreaker {
         attempt.kind = .attempt(guess.match(against: masterCode))
         attempts.append(attempt)
     }
-    
+  
     mutating func changeGuessPeg(at index: Int) {
         let existingPeg = guess.pegs[index]
         if let indexOfExistingPegInPegChoices =  pegChoices.firstIndex(of: existingPeg) {
